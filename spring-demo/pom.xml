@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.varin</groupId>
+        <artifactId>handwriting</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>spring-demo</artifactId>
+
+    <dependencies>
+        <!-- 1. Spring 容器核心：扫描、注册 Bean -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.31</version> <!-- 所有模块版本必须一致 -->
+        </dependency>
+
+        <!-- 2. Bean 实例化、生命周期管理 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>5.3.31</version>
+        </dependency>
+
+        <!-- 3. 核心工具类（必须） -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.3.31</version>
+        </dependency>
+
+        <!-- 4. SpEL 表达式（支持 @Value，可选但建议包含） -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-expression</artifactId>
+            <version>5.3.31</version>
+        </dependency>
+    </dependencies>
+
+
+
+</project>
